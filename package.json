@@ -4,7 +4,9 @@
   "description": "A server for distributed serveillance systems that can be deployed by civic security body",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/Kaushal1011/DSCWOW-DistributedSureveillanceSystem/issues"
   },
-  "homepage": "https://github.com/Kaushal1011/DSCWOW-DistributedSureveillanceSystem#readme"
+  "homepage": "https://github.com/Kaushal1011/DSCWOW-DistributedSureveillanceSystem#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
 }
