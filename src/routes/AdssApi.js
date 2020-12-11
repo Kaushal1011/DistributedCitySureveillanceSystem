@@ -16,15 +16,149 @@
         // get civic detailed report
         apiRouter.post("/civic/detailedreport", getdetailedReport);
 
-        function getcivicWarning(req, res) {}
+        // warning schema
+        // email, location coords, type(high priority civ=1, low priority civ=0,
+        // high priority machine=3, low priority machine=2 )
 
-        function getaiWarning(req, res) {}
+        const lpc = 0;
+        const hpc = 1;
+        const lpa = 2;
+        const hpa = 3;
+        const hpcd = 4;
 
-        function getcivicCfh(req, res) {}
+        function getcivicWarning(req, res) {
+            let id = req.body.email;
+            let coordinates = req.body.coords;
+            let type = lpc;
+            db.collection("warnings").insertOne(
+                {
+                    id: id,
+                    type: type,
+                    location: {
+                        type: "Point",
+                        coordinates: [coordinates.x, coordinates.y],
+                    },
+                },
+                (err, docs) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json({ message: "server error" });
+                        return;
+                    } else {
+                        res.status(200).json({ message: "accepted" });
+                        return;
+                    }
+                }
+            );
+        }
 
-        function getaiCfh(req, res) {}
+        function getaiWarning(req, res) {
+            let id = req.body.email;
+            let coordinates = req.body.coords;
+            let type = lpa;
+            db.collection("warnings").insertOne(
+                {
+                    id: id,
+                    type: type,
+                    location: {
+                        type: "Point",
+                        coordinates: [coordinates.x, coordinates.y],
+                    },
+                },
+                (err, docs) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json({ message: "server error" });
+                        return;
+                    } else {
+                        res.status(200).json({ message: "accepted" });
+                        return;
+                    }
+                }
+            );
+        }
 
-        function getdetailedReport(req, res) {}
+        function getcivicCfh(req, res) {
+            let id = req.body.email;
+            let coordinates = req.body.coords;
+            let type = hpc;
+            db.collection("warnings").insertOne(
+                {
+                    id: id,
+                    type: type,
+                    location: {
+                        type: "Point",
+                        coordinates: [coordinates.x, coordinates.y],
+                    },
+                },
+                (err, docs) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json({ message: "server error" });
+                        return;
+                    } else {
+                        res.status(200).json({ message: "accepted" });
+                        return;
+                    }
+                }
+            );
+        }
+
+        function getaiCfh(req, res) {
+            let id = req.body.email;
+            let coordinates = req.body.coords;
+            let type = hpa;
+            db.collection("warnings").insertOne(
+                {
+                    id: id,
+                    type: type,
+                    location: {
+                        type: "Point",
+                        coordinates: [coordinates.x, coordinates.y],
+                    },
+                },
+                (err, docs) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json({ message: "server error" });
+                        return;
+                    } else {
+                        res.status(200).json({ message: "accepted" });
+                        return;
+                    }
+                }
+            );
+        }
+
+        function getdetailedReport(req, res) {
+            let id = req.body.email;
+            let coordinates = req.body.coords;
+            let type = hpcd;
+            let details = req.body.details;
+            let view = req.body.view;
+            db.collection("warnings").insertOne(
+                {
+                    id: id,
+                    type: type,
+                    location: {
+                        type: "Point",
+                        coordinates: [coordinates.x, coordinates.y],
+                    },
+                    details: details,
+                    view: view,
+                },
+                (err, docs) => {
+                    if (err) {
+                        console.log(err);
+                        res.status(500).json({ message: "server error" });
+                        return;
+                    } else {
+                        res.status(200).json({ message: "accepted" });
+                        return;
+                    }
+                }
+            );
+        }
 
         return apiRouter;
     }
