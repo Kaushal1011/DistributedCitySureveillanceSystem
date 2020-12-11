@@ -20,11 +20,11 @@ const { response } = require("express");
         // get serious cfh calls
         apiRouter.get("/adss/serious", getseriousCfhs);
         // get warnings combined
-        apiRouter.get("/adss/waring", getwarningNotifs);
+        apiRouter.get("/adss/warning", getwarningNotifs);
         // get detailed reports
         apiRouter.get("/adss/reports", getReports);
         // get closest police station,public & private surveillance details
-        apiRouter.post("/civic/cfh", getPPPSD);
+        apiRouter.post("/adss/coords", getPPPSD);
 
         function getWarnings(req, res) {
             db.collection("warnings")
@@ -93,10 +93,10 @@ const { response } = require("express");
 
         function getPPPSD(req, res) {
             let location = {};
-            location.x = req.body.coordinates.x;
-            location.y = req.body.coordinates.y;
+            location.x = req.body.coords.x;
+            location.y = req.body.coords.y;
             let responsejson = [];
-            db.collection("publiccams")
+            db.collection("publiccam")
                 .find({
                     location: {
                         $near: {
@@ -114,7 +114,7 @@ const { response } = require("express");
                     } else {
                         responsejson.push("none");
                     }
-                    db.collection("privatecams")
+                    db.collection("privatecam")
                         .find({
                             location: {
                                 $near: {

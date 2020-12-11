@@ -27,13 +27,14 @@
     console.log("Server starting at http://localhost:" + config.port);
 
     function runApp(err, client) {
-        db.collection("warnings").createIndex({ location: "2dsphere" });
-        db.collection("publiccam").createIndex({ location: "2dsphere" });
-        db.colleciton("privatecam").createIndex({ location: "2dsphere" });
-        db.collection("policestation").createIndex({ location: "2dsphere" });
-
         console.log("MongoDB Connected");
         db = client.db(config.db_name);
+
+        db.collection("warnings").createIndex({ location: "2dsphere" });
+        db.collection("publiccam").createIndex({ location: "2dsphere" });
+        db.collection("privatecam").createIndex({ location: "2dsphere" });
+        db.collection("policestation").createIndex({ location: "2dsphere" });
+
         let AdssApi = require("./routes/AdssApi.js")(app, express, db);
         let AdssAdmin = require("./routes/AdssAdmin.js")(app, express, db);
         let AdssServer = require("./routes/AdssServer.js")(app, express, db);

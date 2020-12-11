@@ -27,7 +27,7 @@
         function getpublicCam(req, res) {
             let id = objectId();
             let name = req.body.name;
-            let coordinates = req.body.coordinates;
+            let coordinates = req.body.coords;
             let address = req.body.address;
             let authpersonal = req.body.authpersonal;
             let contact = req.body.contact;
@@ -37,7 +37,7 @@
                     name: name,
                     address: address,
                     location: {
-                        type: "point",
+                        type: "Point",
                         coordinates: [coordinates.x, coordinates.y],
                     },
                     authpersonal: authpersonal,
@@ -59,7 +59,7 @@
         function getprivateCam(req, res) {
             let id = objectId();
             let name = req.body.name;
-            let coordinates = req.body.coordinates;
+            let coordinates = req.body.coords;
             let address = req.body.address;
             let authpersonal = req.body.authpersonal;
             let contact = req.body.contact;
@@ -69,7 +69,7 @@
                     name: name,
                     address: address,
                     location: {
-                        type: "point",
+                        type: "Point",
                         coordinates: [coordinates.x, coordinates.y],
                     },
                     authpersonal: authpersonal,
@@ -91,7 +91,7 @@
         function getpoliceStation(req, res) {
             let id = objectId();
             let name = req.body.name;
-            let coordinates = req.body.coordinates;
+            let coordinates = req.body.coords;
             let address = req.body.address;
             let pi = req.body.pi;
             let contact = req.body.contact;
@@ -101,10 +101,10 @@
                     name: name,
                     address: address,
                     location: {
-                        type: "point",
+                        type: "Point",
                         coordinates: [coordinates.x, coordinates.y],
                     },
-                    authpersonal: authpersonal,
+                    pi: pi,
                     contact: contact,
                 },
                 (err, docs) => {
