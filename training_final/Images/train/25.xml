@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>25.jpeg</filename>
+	<path>/Users/hokage/PycharmProjects/pythonProject9/training/images/train/25.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>294</width>
+		<height>171</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>123</xmin>
+			<ymin>88</ymin>
+			<xmax>232</xmax>
+			<ymax>159</ymax>
+		</bndbox>
+	</object>
+</annotation>

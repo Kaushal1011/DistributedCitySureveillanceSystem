@@ -1,0 +1,26 @@
+<annotation>
+	<folder>weaponsimages</folder>
+	<filename>knife_109.jpg</filename>
+	<path>/home/kaypee/Desktop/weaponsimages/knife_109.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>100</width>
+		<height>100</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>knife</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>47</xmin>
+			<ymin>2</ymin>
+			<xmax>73</xmax>
+			<ymax>80</ymax>
+		</bndbox>
+	</object>
+</annotation>

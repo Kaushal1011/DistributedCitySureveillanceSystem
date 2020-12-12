@@ -1,0 +1,26 @@
+<annotation>
+	<folder>weaponsimages</folder>
+	<filename>77.jpeg</filename>
+	<path>/home/kaypee/Desktop/weaponsimages/77.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>259</width>
+		<height>194</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>56</xmin>
+			<ymin>97</ymin>
+			<xmax>99</xmax>
+			<ymax>145</ymax>
+		</bndbox>
+	</object>
+</annotation>

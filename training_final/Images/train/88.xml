@@ -1,0 +1,26 @@
+<annotation>
+	<folder>weaponsimages</folder>
+	<filename>88.jpeg</filename>
+	<path>/home/kaypee/Desktop/weaponsimages/88.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>168</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>30</xmin>
+			<ymin>76</ymin>
+			<xmax>120</xmax>
+			<ymax>164</ymax>
+		</bndbox>
+	</object>
+</annotation>
