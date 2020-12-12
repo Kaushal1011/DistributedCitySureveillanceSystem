@@ -1,0 +1,3 @@
+[submodule "DSCWOW-DSS_Dashboard_FE"]
+	path = DSCWOW-DSS_Dashboard_FE
+	url = https://github.com/pratyush-okay/DSCWOW-DSS_Dashboard_FE.git
