@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "90a6684f-5d02-4c96-988c-1758490b7a71",
+		"name": "ADSS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "police station call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"shrenik park\",\n    \"coords\":{\n        \"x\":70.5,\n        \"y\":23.8\n\n    },\n    \"address\":\"shrenik park society near akota\",\n    \"authpersonal\":\"mr x\",\n    \"contact\":\"12377753\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/policestation/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"policestation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "privatecam call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"shrenik park\",\n    \"coords\":{\n        \"x\":71.01,\n        \"y\":23.03\n\n    },\n    \"address\":\"shrenik park society near akota\",\n    \"authpersonal\":\"mr x\",\n    \"contact\":\"12377753\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/privatecam/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"privatecam",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "public cam call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"shrenik park\",\n    \"coords\":{\n        \"x\":71,\n        \"y\":23\n\n    },\n    \"address\":\"shrenik park society near akota\",\n    \"authpersonal\":\"mr x\",\n    \"contact\":\"12377753\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/publiccam/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"publiccam",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get closest locations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coords\":{\n        \"x\":70,\n        \"y\":23\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/adss/coords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adss",
+						"coords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "civic warning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kp@email.com\",\n    \"coords\":{\n        \"x\":70,\n        \"y\":22\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/civic/warning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"civic",
+						"warning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ai warning",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kp@email.com\",\n    \"coords\":{\n        \"x\":70,\n        \"y\":22\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/ai/warning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"ai",
+						"warning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "civic call fro helo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kp@email.com\",\n    \"coords\":{\n        \"x\":75,\n        \"y\":20\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/civic/cfh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"civic",
+						"cfh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ai call for help",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kp@email.com\",\n    \"coords\":{\n        \"x\":69,\n        \"y\":19\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/ai/cfh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"ai",
+						"cfh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "civic detailed report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kp@email.com\",\n    \"coords\":{\n        \"x\":70,\n        \"y\":22\n    },\n    \"details\":\"details of incident\",\n    \"view\":\"what i saw at time of happening\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/civic/detailedreport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"civic",
+						"detailedreport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "civiv warnings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/civic/warning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"civic",
+						"warning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ai warnings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/ai/warning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"ai",
+						"warning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all serious reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/adss/serious",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adss",
+						"serious"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all warninfs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/adss/warning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adss",
+						"warning"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/adss/reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adss",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
