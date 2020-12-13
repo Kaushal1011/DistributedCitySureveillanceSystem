@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+ADSS_Phone_App/.expo
+
+*.xml
+*.jpeg
+*.jpg

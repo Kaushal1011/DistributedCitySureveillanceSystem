@@ -53,6 +53,7 @@
         }
 
         function getaiWarning(req, res) {
+            console.log(req.body);
             let id = req.body.email;
             let coordinates = req.body.coords;
             let type = lpa;
@@ -62,7 +63,10 @@
                     type: type,
                     location: {
                         type: "Point",
-                        coordinates: [coordinates.x, coordinates.y],
+                        coordinates: [
+                            parseFloat(coordinates[0]),
+                            parseFloat(coordinates[1]),
+                        ],
                     },
                 },
                 (err, docs) => {
@@ -79,6 +83,7 @@
         }
 
         function getcivicCfh(req, res) {
+            console.log(req.body);
             let id = req.body.email;
             let coordinates = req.body.coords;
             let type = hpc;
@@ -105,6 +110,7 @@
         }
 
         function getaiCfh(req, res) {
+            console.log(req.body);
             let id = req.body.email;
             let coordinates = req.body.coords;
             let type = hpa;
@@ -114,7 +120,10 @@
                     type: type,
                     location: {
                         type: "Point",
-                        coordinates: [coordinates.x, coordinates.y],
+                        coordinates: [
+                            parseFloat(coordinates[0]),
+                            parseFloat(coordinates[1]),
+                        ],
                     },
                 },
                 (err, docs) => {
