@@ -1,5 +1,7 @@
 # DSCWOW-DistributedSureveillanceSystem
 
+![logo](logo.png)
+
 Repository for Distributed Surveillance System Project Created at DSC WOW Code Off Duty Hackathon.
 
 ## Instruction to Run
