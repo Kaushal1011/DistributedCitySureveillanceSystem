@@ -4,7 +4,7 @@
 
 Repository for Distributed Surveillance System Project Created at DSC WOW Code Off Duty Hackathon.
 
-![Video Demonstration of this project](https://youtu.be/-DlXvhqaOBI)
+[Video Demonstration of this project](https://youtu.be/-DlXvhqaOBI)
 
 ## Instruction to Run
 
