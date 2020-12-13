@@ -53,7 +53,7 @@ To sum it up, We are trying to be your neighbourhood friendly spider man but wit
 
 ## Architecture and Wireframes
 
-![Arch](Advanced Distributed Surveillance System.png)
+![Arch](AdvancedDistributedSurveillanceSystem.png)
 
 ![Dashboard](dashboard.png)
 
