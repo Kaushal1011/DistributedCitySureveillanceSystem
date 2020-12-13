@@ -59,10 +59,10 @@ To sum it up, We are trying to be your neighbourhood friendly spider man but wit
 
 ![Dashboard](dashboard.png)
 
-![APP1](app1.png)
+![APP1](app1.jpg)
 
-![APP2](app2.png)
+![APP2](app2.jpg)
 
-![APP3](app3.png)
+![APP3](app3.jpg)
 
-![OBD](obd.png)
+![OBD](KnifeDetection.png)
