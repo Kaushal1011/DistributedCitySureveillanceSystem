@@ -94,11 +94,11 @@ while True:
 
     if(gun_pd > 0.55):
         requests.post(
-            url + "cfh/", data={"email": "284363.Camera.849", "coords": {75, 22}})
+            url + "cfh/", data={"email": "284363.Camera.849.aurtus", "coords": {72.5504856, 23.0530163}})
 
     if(knife_pd > 0.4):
         requests.post(
-            url+"warning/", data={"email": "284363.Camera.849", "coords": {75, 22}})
+            url+"warning/", data={"email": "284363.Camera.849", "coords": {72.5504856, 23.0530163}})
 
     label_id_offset = 1
     image_np_with_detections = image_np.copy()
