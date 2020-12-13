@@ -108,3 +108,4 @@ ADSS_Phone_App/.expo
 *.xml
 *.jpeg
 *.jpg
+.venv
